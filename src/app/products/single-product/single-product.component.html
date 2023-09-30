@@ -1,0 +1,28 @@
+<section class="single-product section">
+  <div class="section-center single-product-center">
+    <img [src]="product.img" class="single-product-img img" alt="" />
+    <article class="single-product-info">
+      <div>
+        <h2 class="single-product-title">{{ product.name }}</h2>
+        <p class="single-product-company text-slanted">
+          by {{ product.company }}
+        </p>
+        <span class="single-product-price">{{ product.price }}</span>
+        <div class="single-product-colors">
+          <span class="product-color"></span>
+          <span class="product-color product-color-red"></span>
+        </div>
+        <p class="single-product-desc">
+          {{ product.description }}
+        </p>
+        <button
+          class="addToCartBtn btn"
+          data-id="id"
+          (click)="addToCart(product)"
+        >
+          add to cart
+        </button>
+      </div>
+    </article>
+  </div>
+</section>

@@ -1,0 +1,35 @@
+<div class="filters">
+  <div class="filters-container">
+    <!-- search -->
+    <form class="input-form">
+      <input
+        name="byText"
+        [(ngModel)]="byText"
+        type="text"
+        class="search-input"
+        placeholder="search..."
+      />
+    </form>
+    <!-- categories -->
+    <h5>Company</h5>
+    <select name="byCompany" [(ngModel)]="byCompany" class="companies">
+      <option value="all" class="company-btn">all</option>
+      <option value="ikea" class="company-btn">ikea</option>
+      <option value="marcos" class="company-btn">marcos</option>
+    </select>
+    <!-- price -->
+    <h5>Price</h5>
+    <form class="price-form">
+      <input
+        name="byPrice"
+        [(ngModel)]="byPrice"
+        type="range"
+        class="price-filter"
+        min="0"
+        value="50"
+        max="100"
+      />
+    </form>
+    <span class="price-value">Value : {{ byPrice }}</span>
+  </div>
+</div>

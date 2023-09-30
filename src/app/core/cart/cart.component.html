@@ -1,0 +1,50 @@
+<div class="cart-overlay" [class]="show ? 'show' : ''">
+  <aside class="cart">
+    <button class="cart-close" type="button" (click)="onCloseCart()">
+      <i class="fas fa-times"></i>
+    </button>
+    <header>
+      <h3 class="text-slanted">your bag</h3>
+    </header>
+    <!-- cart items -->
+    <div class="cart-items">
+      <!-- single cart item -->
+      <article *ngFor="let item of items" class="cart-item">
+        <img [src]="item.product.img" class="cart-item-img" alt="product" />
+        <div class="cart-item-info">
+          <h5 class="cart-item-name">{{ item.product.name }}</h5>
+          <span class="cart-item-price">{{ item.product.price }}</span>
+          <button (click)="removeFromCart(item)" class="cart-item-remove-btn">
+            remove
+          </button>
+        </div>
+
+        <div>
+          <button
+            (click)="increaseQuantity(item)"
+            class="cart-item-increase-btn"
+          >
+            <i class="fas fa-chevron-up"></i>
+          </button>
+          <span class="cart-item-amount">{{ item.quantity }}</span>
+          <button
+            (click)="decreaseQuantity(item)"
+            class="cart-item-decrease-btn"
+          >
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+      </article>
+    </div>
+    <!-- end of single cart item -->
+    <!-- single cart item -->
+
+    <!-- footer -->
+    <footer>
+      <h3 class="cart-total text-slanted">
+        total : {{ totalPrice | currency : "USD" }}
+      </h3>
+      <button class="cart-checkout btn">checkout</button>
+    </footer>
+  </aside>
+</div>

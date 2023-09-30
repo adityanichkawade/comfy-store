@@ -1,0 +1,70 @@
+{
+  "products": {
+    "1": {
+      "id": 1,
+      "img": "assets/product-1.jpeg",
+      "name": "high-back bench",
+      "price": 9.99,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, modi? Minima libero doloremque necessitatibus! Praesentium recusandae quod nesciunt animi voluptatem!",
+      "company": "marcos"
+    },
+    "2": {
+      "id": 2,
+      "img": "assets/product-2.jpeg",
+      "name": "high-back bench",
+      "price": 9.99,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, modi? Minima libero doloremque necessitatibus! Praesentium recusandae quod nesciunt animi voluptatem!",
+      "company": "marcos"
+    },
+    "3": {
+      "id": 3,
+      "img": "assets/product-3.jpeg",
+      "name": "high-back bench",
+      "price": 9.99,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, modi? Minima libero doloremque necessitatibus! Praesentium recusandae quod nesciunt animi voluptatem!",
+      "company": "marcos"
+    },
+    "4": {
+      "id": 4,
+      "img": "assets/product-4.jpeg",
+      "name": "high-back bench",
+      "price": 9.99,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, modi? Minima libero doloremque necessitatibus! Praesentium recusandae quod nesciunt animi voluptatem!",
+      "company": "marcos"
+    },
+    "5": {
+      "id": 5,
+      "img": "assets/product-5.jpeg",
+      "name": "high-back bench",
+      "price": 9.99,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, modi? Minima libero doloremque necessitatibus! Praesentium recusandae quod nesciunt animi voluptatem!",
+      "company": "marcos"
+    },
+    "6": {
+      "id": 6,
+      "img": "assets/product-6.jpeg",
+      "name": "high-back bench",
+      "price": 9.99,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, modi? Minima libero doloremque necessitatibus! Praesentium recusandae quod nesciunt animi voluptatem!",
+      "company": "marcos"
+    },
+    "7": {
+      "id": 7,
+      "img": "assets/product-7.jpeg",
+      "name": "high-back bench",
+      "price": 9.99,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, modi? Minima libero doloremque necessitatibus! Praesentium recusandae quod nesciunt animi voluptatem!",
+      "company": "marcos"
+    },
+    "8": {
+      "id": 8,
+      "img": "assets/product-8.jpeg",
+      "name": "high-back bench",
+      "price": 9.99,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, modi? Minima libero doloremque necessitatibus! Praesentium recusandae quod nesciunt animi voluptatem!",
+      "company": "marcos"
+    }
+  },
+  "featuredList": [1, 2, 3],
+  "allList": [1, 2, 3, 4, 5, 6, 7, 8]
+}

@@ -1,0 +1,10 @@
+<section class="hero">
+  <div class="hero-container">
+    <h1 class="text-slanted">rest, relax, unwind</h1>
+    <h3 class="text-slanted">embrace your choices - we do</h3>
+    <a [routerLink]="['/', 'products']" class="btn hero-btn text-slanted">
+      shop now
+    </a>
+  </div>
+</section>
+<app-featured-products [products]="featuredProducts"></app-featured-products>

@@ -1,0 +1,21 @@
+<nav class="navbar">
+  <div class="nav-center">
+    <!-- links -->
+    <div>
+      <button class="toggle-nav">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links">
+        <app-navbar-item
+          *ngFor="let navbarItem of navbarItems"
+          [title]="navbarItem.title"
+          [path]="navbarItem.path"
+        ></app-navbar-item>
+      </ul>
+    </div>
+    <!-- logo -->
+    <img src="./assets/logo-white.svg" class="nav-logo" alt="logo" />
+    <!-- cart icon -->
+    <app-navbar-item-cart></app-navbar-item-cart>
+  </div>
+</nav>

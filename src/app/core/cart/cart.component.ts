@@ -35,10 +35,10 @@ export class CartComponent implements OnInit, OnDestroy {
   }
 
   increaseQuantity(item: Cart): void {
-    item.quantity += 1;
+    this.cartService.increaseQuantity(item);
   }
 
   decreaseQuantity(item: Cart): void {
-    item.quantity -= 1;
+    this.cartService.decreaseQuantity(item);
   }
 }

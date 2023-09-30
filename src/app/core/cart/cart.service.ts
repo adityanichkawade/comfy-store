@@ -29,6 +29,7 @@ export class CartService {
   }
 
   removeFromCart(cart: Cart): void {
+    cart.quantity = 0;
     this.cartItems = this.cartItems.filter(
       (cartItem: Cart) => cartItem.product.id !== cart.product.id
     );
@@ -44,5 +45,16 @@ export class CartService {
         accumulator + currentValue.quantity * currentValue.product.price,
       0
     );
+  }
+
+  increaseQuantity(cart: Cart) {
+    cart.quantity += 1;
+  }
+
+  decreaseQuantity(cart: Cart) {
+    cart.quantity -= 1;
+    if (cart.quantity <= 0) {
+      this.removeFromCart(cart);
+    }
   }
 }

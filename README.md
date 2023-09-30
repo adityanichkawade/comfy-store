@@ -1,7 +1,6 @@
 # ComfyStore
 
 This project is clone of vanilla javascript project -> https://vanilla-js-store.netlify.app/ by John Smilga
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
 
 ## Development server
 
